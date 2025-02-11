@@ -8,7 +8,7 @@ The **Totally Asymmetric Simple Exclusion Process (TASEP)** is a stochastic mode
 - A particle exits the **last site** (\( L \)) with rate \( \beta \).
 
 ### **🔹 Lattice Representation**
-![Icon Pack - mRNA (2)](https://github.com/user-attachments/assets/73ad909f-289e-4ffd-bbce-102677d6f07d)
+![Icon Pack - mRNA (2)](https://github.com/user-attachments/assets/cca1b584-dd40-4bc1-b125-80ab835de9ce)
 
 ## **📊 Phases of TASEP**
 TASEP exhibits three steady-state phases:
