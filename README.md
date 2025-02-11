@@ -4,7 +4,7 @@
 The **Totally Asymmetric Simple Exclusion Process (TASEP)** is a stochastic model describing particles moving on a **one-dimensional lattice** under exclusion constraints. Each site can hold at most one particle.
 
 - A particle enters the **first site** with rate \(\alpha\) if the site is empty.
-- At site \( x \), the particle **hops to \( x+1 \) with rate \( p \)** if the next site is empty.
+- At site \( i \), the particle **hops to \( i+1 \) with rate \( p \)** if the next site is empty.
 - A particle exits the **last site** (\( L \)) with rate \( \beta \).
 
 ### **🔹 Lattice Representation**
