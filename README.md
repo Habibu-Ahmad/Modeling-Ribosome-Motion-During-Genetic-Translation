@@ -1,7 +1,15 @@
 ## Project Overview
 
 Ribosome motion during genetic translation is modeled using the **Totally Asymmetric Simple Exclusion Process (TASEP)**, with validation via Monte Carlo simulations. It is then extended to a **ballistic model**, an approximation of TASEP in the low-density regime, characterized by deterministic ribosome movement without excluded volume interactions and incorporating finite mRNA lifetime. The model includes the partitioning of mRNAs into **k-somes** (monosomes, disomes, trisomes, and tetrasomes) and estimation of kinetic parameters such as the initiation rate `α` and elongation rates `p`. Predictions are compared against **Ribo-seq experimental data**.
-<img width="2986" height="936" alt="mRNA_translation" src="https://github.com/user-attachments/assets/c4e2e0f4-0b73-42af-8767-7b5610716897" />
+
+## Model Description
+
+The translation process is modeled as a unidirectional transport of ribosomes along mRNA. The main steps are illustrated below:
+
+![Translation Model]<img width="2986" height="936" alt="mRNA_translation" src="https://github.com/user-attachments/assets/c4e2e0f4-0b73-42af-8767-7b5610716897" />
+
+**Figure:** Schematic representation of ribosome dynamics during translation. Ribosomes bind to the mRNA at the initiation site with rate **α**, progress along the mRNA via elongation with rate **p**, and detach at the termination site with rate **β**. The model also accounts for mRNA degradation occurring at rate **ω**, leading to incomplete transcripts and premature release of ribosomes. Each ribosome adds amino acids delivered by tRNA to the growing polypeptide chain.
+
 
 ## **📜 Model Description**
 The **Totally Asymmetric Simple Exclusion Process (TASEP)** is a stochastic model describing particles moving on a **one-dimensional lattice** under exclusion constraints. Each site can hold at most one particle.
