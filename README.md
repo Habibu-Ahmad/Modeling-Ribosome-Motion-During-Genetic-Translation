@@ -2,38 +2,20 @@
 
 Ribosome motion during genetic translation is modeled using the **Totally Asymmetric Simple Exclusion Process (TASEP)**, with validation via Monte Carlo simulations. It is then extended to a **ballistic model**, an approximation of TASEP in the low-density regime, characterized by deterministic ribosome movement without excluded volume interactions and incorporating finite mRNA lifetime. The model includes the partitioning of mRNAs into **k-somes** (monosomes, disomes, trisomes, and tetrasomes) and estimation of kinetic parameters such as the initiation rate `α` and elongation rates `p`. Predictions are compared against **Ribo-seq experimental data**.
 
-## Model Description
+## 🧬 Model Description
 
-The translation process is modeled as a unidirectional transport of ribosomes along mRNA. The main steps are illustrated below:
+The **Totally Asymmetric Simple Exclusion Process (TASEP)** is a stochastic model describing particles moving unidirectionally on a one-dimensional lattice under an exclusion constraint, where each site can be occupied by at most one particle. This framework models ribosome translation on mRNA.
+
+In this model:
+- Ribosomes **initiate** at the first site with rate `α`,
+- **Elongate** through the lattice with rate `p`, only if the next site is empty,
+- **Terminate** at the final site with rate `β`,
+- And the mRNA **degrades** with rate `ω`, limiting its lifetime.
+
 
 <img width="2986" height="936" alt="mRNA_translation" src="https://github.com/user-attachments/assets/c4e2e0f4-0b73-42af-8767-7b5610716897" />
 
-**Figure:** Schematic representation of ribosome dynamics during translation. Ribosomes bind to mRNA and initiate translation with rate *α*,  elongate with rate *p*, and terminate with rate *β*. mRNA undergoes degradation with rate ω.
 
-
-## **📜 Model Description**
-The **Totally Asymmetric Simple Exclusion Process (TASEP)** is a stochastic model describing particles moving on a **one-dimensional lattice** under exclusion constraints. Each site can hold at most one particle.
-
-- A particle enters the **first site** with rate \(\alpha\) if the site is empty.
-- At site \( i \), the particle **hops to \( i+1 \) with rate \( p \)** if the next site is empty.
-- A particle exits the **last site** (\( L \)) with rate \( \beta \).
-
-### **🔹 Lattice Representation**
-![m<img width="2986" height="936" alt="mRNA_translation" src="https://github.com/user-attachments/assets/40ec932f-7b77-4580-aa67-f68f3fa1dffb" />
-](https://github.com/user-attachments/assets/cca1b584-dd40-4bc1-b125-80ab835de9ce)
-
-## **📊 Phases of TASEP**
-TASEP exhibits three steady-state phases:
-
-1. **High-Density (HD) Phase**: If \( \alpha > 0.5 \), the density is controlled by the entry rate, \( \rho = 1 - \beta \).
-2. **Low-Density (LD) Phase**: If \( \beta > 0.5 \), the density is controlled by the exit rate, \( \rho = \alpha \).
-3. **Maximal Current (MC) Phase**: If both \( \alpha, \beta > 0.5 \), the system reaches a maximal flow state with \( \rho = 1/2 \).
-
-The fundamental **current-density relation** is:
-
-$$
-J(\rho) = \rho(1 - \rho)
-$$
 
 ## **📈 Simulation Method**
 The **random sequential update rule** is used:
