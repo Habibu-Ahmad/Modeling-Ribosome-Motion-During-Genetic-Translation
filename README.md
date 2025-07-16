@@ -15,19 +15,18 @@ In this model:
 <img width="2986" height="636" alt="mRNA_translation" src="https://github.com/user-attachments/assets/c4e2e0f4-0b73-42af-8767-7b5610716897" />
 
 
-## **📈 Simulation Method**
+## ** Simulation Method**
 The **random sequential update rule** is used:
 - At each time step, a site is randomly selected.
 - If the site is occupied and the next site is empty, the particle moves with probability \( p \).
 - Particles enter and exit based on the boundary conditions \( \alpha \) and \( \beta \).
 
 
-```
 
-## **📄 References**
+## ** References**
 - Derrida, B., Domany, E., & Mukamel, D. (1992). *Exact solution of a one-dimensional asymmetric exclusion model with open boundaries*. Journal of Statistical Physics.
 - MacDonald, C. T., Gibbs, J. H., & Pipkin, A. C. (1968). *Kinetics of biopolymerization on nucleic acid templates*. Biopolymers.
-
+- Chevalier, C., Dorignac, J., Ibrahim, Y., Choquet, A., David, A., Ripoll, J., Rivals, E., Geniet, F., Walliser, N.-O., Palmeri, J., Parmeggiani, A., & Walter, J.-C. (2022). *Physical modeling of ribosomes along messenger RNA: Estimating kinetic parameters from ribosome profiling experiments using a ballistic model*. arXiv preprint arXiv:2208.12576. https://arxiv.org/abs/2208.12576
 
 
 
