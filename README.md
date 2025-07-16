@@ -12,7 +12,7 @@ In this model:
 - **Terminate** at the final site with rate `β`,
 - Taking into account the finite mRNA lifetime, **degradation** occurs with rate `ω`.
 
-<img width="2986" height="836" alt="mRNA_translation" src="https://github.com/user-attachments/assets/c4e2e0f4-0b73-42af-8767-7b5610716897" />
+<img width="2986" height="636" alt="mRNA_translation" src="https://github.com/user-attachments/assets/c4e2e0f4-0b73-42af-8767-7b5610716897" />
 
 
 ## **📈 Simulation Method**
