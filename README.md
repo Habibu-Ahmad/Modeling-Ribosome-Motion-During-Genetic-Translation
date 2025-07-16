@@ -1,4 +1,7 @@
-# **TASEP Simulation in Python**
+## Project Overview
+
+Ribosome motion during genetic translation is modeled using the **Totally Asymmetric Simple Exclusion Process (TASEP)**, with validation via Monte Carlo simulations. It is then extended to a **ballistic model**, an approximation of TASEP in the low-density regime, characterized by deterministic ribosome movement without excluded volume interactions and incorporating finite mRNA lifetime. The model includes the partitioning of mRNAs into **k-somes** (monosomes, disomes, trisomes, and tetrasomes) and estimation of kinetic parameters such as the initiation rate `α` and elongation rates `p`. Predictions are compared against **Ribo-seq experimental data**.
+<img width="2986" height="936" alt="mRNA_translation" src="https://github.com/user-attachments/assets/c4e2e0f4-0b73-42af-8767-7b5610716897" />
 
 ## **📜 Model Description**
 The **Totally Asymmetric Simple Exclusion Process (TASEP)** is a stochastic model describing particles moving on a **one-dimensional lattice** under exclusion constraints. Each site can hold at most one particle.
@@ -8,7 +11,8 @@ The **Totally Asymmetric Simple Exclusion Process (TASEP)** is a stochastic mode
 - A particle exits the **last site** (\( L \)) with rate \( \beta \).
 
 ### **🔹 Lattice Representation**
-![Icon Pack - mRNA (2)](https://github.com/user-attachments/assets/cca1b584-dd40-4bc1-b125-80ab835de9ce)
+![m<img width="2986" height="936" alt="mRNA_translation" src="https://github.com/user-attachments/assets/40ec932f-7b77-4580-aa67-f68f3fa1dffb" />
+](https://github.com/user-attachments/assets/cca1b584-dd40-4bc1-b125-80ab835de9ce)
 
 ## **📊 Phases of TASEP**
 TASEP exhibits three steady-state phases:
