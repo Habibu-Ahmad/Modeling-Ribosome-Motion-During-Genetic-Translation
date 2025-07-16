@@ -6,9 +6,9 @@ Ribosome motion during genetic translation is modeled using the **Totally Asymme
 
 The translation process is modeled as a unidirectional transport of ribosomes along mRNA. The main steps are illustrated below:
 
-![Translation Model]<img width="2986" height="936" alt="mRNA_translation" src="https://github.com/user-attachments/assets/c4e2e0f4-0b73-42af-8767-7b5610716897" />
+<img width="2986" height="936" alt="mRNA_translation" src="https://github.com/user-attachments/assets/c4e2e0f4-0b73-42af-8767-7b5610716897" />
 
-**Figure:** Schematic representation of ribosome dynamics during translation. Ribosomes bind to the mRNA at the initiation site with rate **α**, progress along the mRNA via elongation with rate **p**, and detach at the termination site with rate **β**. The model also accounts for mRNA degradation occurring at rate **ω**, leading to incomplete transcripts and premature release of ribosomes. Each ribosome adds amino acids delivered by tRNA to the growing polypeptide chain.
+**Figure:** Schematic representation of ribosome dynamics during translation. Ribosomes bind to mRNA and initiate translation with rate *α*,  elongate with rate *p*, and terminate with rate *β*. mRNA undergoes degradation with rate ω.
 
 
 ## **📜 Model Description**
